@@ -14,3 +14,4 @@ class MainActivity : AppCompatActivity() {
 // hola x2
 // BOCA SHO TE AMO
 // :C
+// kajfñajiv´vne
