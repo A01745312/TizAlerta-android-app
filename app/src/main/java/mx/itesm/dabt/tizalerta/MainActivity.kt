@@ -10,7 +10,3 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
-//prueba
-//Esta es una segunda prueba
-// Tercera prueba Taiko
-//Cuarta prueba taiko SIUUUUUUUUUUUUUUUU
