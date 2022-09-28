@@ -9,10 +9,3 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 }
-
-// hola
-// hola x2
-// BOCA SHO TE AMO
-// :C
-// kajfñajiv´vne
-//holii
