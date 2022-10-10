@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="25dp"
+    android:padding="20dp"
     android:background="#FFFFFF"
     tools:context=".Model.MainActivity">
 
@@ -70,7 +70,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="140dp"
+            android:layout_height="120dp"
             android:background="@drawable/clima_background">
 
             <LinearLayout
@@ -92,14 +92,32 @@
                         android:layout_weight="1"
                         android:gravity="end|center"
                         android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/temperatureTextView"
+                        <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="15"
-                            android:textColor="#FFFFFF"
-                            android:textSize="52sp" />
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/temperatureTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="15"
+                                android:textColor="#FFFFFF"
+                                android:textSize="40sp" />
+
+                            <TextView
+                                android:id="@+id/weatherConditionTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Soleado"
+                                android:textColor="#FFFFFF"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -122,20 +140,10 @@
                             android:layout_width="52sp"
                             android:layout_height="52sp"
                             android:adjustViewBounds="true"
-                            android:src="@drawable/megafono"
+                            android:src="@mipmap/ic_launcher"
                             tools:ignore="ContentDescription" />
                     </RelativeLayout>
                 </LinearLayout>
-
-                <TextView
-                    android:id="@+id/weatherConditionTextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-
-                    android:gravity="center"
-                    android:text="Nublado"
-                    android:textColor="#FFFFFF"
-                    android:textSize="18sp" />
 
                 <Button
                     android:layout_width="match_parent"
