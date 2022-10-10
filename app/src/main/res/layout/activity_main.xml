@@ -2,24 +2,25 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:padding="25dp"
+    android:background="#FFFFFF"
+    tools:context=".Model.MainActivity">
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        android:layout_marginTop="16dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:id="@+id/mainContanier"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imgTitulo"
             android:layout_width="match_parent"
             android:layout_height="150dp"
+            android:layout_gravity="center"
             app:srcCompat="@drawable/tizalertacorregido" />
 
         <TextView
@@ -33,7 +34,8 @@
         <ScrollView
             android:id="@+id/svNoti"
             android:layout_width="match_parent"
-            android:layout_height="200dp">
+            android:layout_height="160dp"
+            android:background="@drawable/round_containers_background">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -52,10 +54,11 @@
         <TextView
             android:id="@+id/tvAlerta"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="80dp"
             android:text="TextView"
             android:textSize="27sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:background="@drawable/round_containers_background"/>
 
         <TextView
             android:id="@+id/tv3"
@@ -65,18 +68,96 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/tvClima"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Clima" />
+            android:layout_height="140dp"
+            android:background="@drawable/clima_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="end|center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/temperatureTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="15"
+                            android:textColor="#FFFFFF"
+                            android:textSize="52sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:text="\u2103"
+                            android:textColor="#FFFFFF"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/weatherIconImageView"
+                            android:layout_width="52sp"
+                            android:layout_height="52sp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/megafono"
+                            tools:ignore="ContentDescription" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/weatherConditionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:text="Nublado"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Pronostico 5 dias">
+
+                </Button>
+
+            </LinearLayout>
+
+        </RelativeLayout>
 
         <ImageButton
             android:id="@+id/btnEmerg"
-            android:layout_width="260dp"
-            android:layout_height="183dp"
+            android:layout_width="230dp"
+            android:layout_height="160dp"
             android:layout_gravity="center"
             android:scaleType="centerInside"
-            app:srcCompat="@drawable/megafono" />
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/megafono"
+            android:background="@drawable/round_containers_background"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

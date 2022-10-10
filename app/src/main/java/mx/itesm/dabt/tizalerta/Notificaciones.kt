@@ -10,6 +10,7 @@ import android.widget.RemoteViews
 import androidx.core.app.NotificationCompat
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
+import mx.itesm.dabt.tizalerta.Model.MainActivity
 
 class Notificaciones: FirebaseMessagingService() {
 
