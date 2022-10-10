@@ -18,8 +18,8 @@
 
         <ImageView
             android:id="@+id/imgTitulo"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_width="372dp"
+            android:layout_height="113dp"
             android:layout_gravity="center"
             app:srcCompat="@drawable/tizalertacorregido" />
 
@@ -152,12 +152,12 @@
 
         <ImageButton
             android:id="@+id/btnEmerg"
-            android:layout_width="230dp"
-            android:layout_height="160dp"
+            android:layout_width="121dp"
+            android:layout_height="87dp"
             android:layout_gravity="center"
-            android:scaleType="centerInside"
             android:layout_marginTop="10dp"
-            app:srcCompat="@drawable/megafono"
-            android:background="@drawable/round_containers_background"/>
+            android:background="@drawable/round_containers_background"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/megafono" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
